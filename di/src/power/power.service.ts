@@ -3,6 +3,6 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class PowerService {
   supplyPower(watts: number) {
-    console.log(`supplying ${watts} of power`);
+    console.log(`supplying ${watts} watts of power`);
   }
 }

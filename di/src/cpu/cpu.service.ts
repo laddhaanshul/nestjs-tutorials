@@ -8,4 +8,9 @@ export class CpuService {
   constructor(powerService: PowerService) {
     this.powerService = powerService;
   }
+
+  compute(a: number, b: number) {
+    this.powerService.supplyPower(a);
+    return a + b;
+  }
 }
